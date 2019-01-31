@@ -14,7 +14,7 @@
 
 #define EFI_FSIO TRUE
 
-#define EFI_CDM_INTEGRATION TRUE
+#define EFI_CDM_INTEGRATION FALSE
 
 #define EFI_TEXT_LOGGING TRUE
 
@@ -41,7 +41,7 @@
 #endif /* EFI_ENABLE_ASSERTS */
 
 #if !defined(EFI_ENABLE_MOCK_ADC) || defined(__DOXYGEN__)
- #define EFI_ENABLE_MOCK_ADC TRUE
+ #define EFI_ENABLE_MOCK_ADC FALSE
 #endif /* EFI_ENABLE_MOCK_ADC */
 
 
@@ -52,9 +52,9 @@
 /**
  * Build-in logic analyzer support. Logic analyzer viewer is one of the java console panes.
  */
-#define EFI_WAVE_ANALYZER TRUE
+#define EFI_WAVE_ANALYZER FALSE
 
-#define EFI_ICU_INPUTS TRUE
+#define EFI_ICU_INPUTS FALSE
 
 /**
  * TunerStudio support.
@@ -94,12 +94,12 @@
 
 #define TRIGGER_EXTREME_LOGGING FALSE
 
-#define EFI_INTERNAL_FLASH TRUE
+#define EFI_INTERNAL_FLASH FALSE
 
 /**
  * Usually you need shaft position input, but maybe you do not need it?
  */
-#define EFI_SHAFT_POSITION_INPUT TRUE
+#define EFI_SHAFT_POSITION_INPUT FALSE
 
 /**
  * Maybe we are just sniffing what's going on?
@@ -117,29 +117,29 @@
 
 #define EFI_ANALOG_SENSORS TRUE
 
-#define EFI_MAX_31855 TRUE
+#define EFI_MAX_31855 FALSE
 
 #define EFI_MCP_3208 FALSE
 
-#define EFI_HIP_9011 TRUE
+#define EFI_HIP_9011 FALSE
 
-#define EFI_CJ125 TRUE
+#define EFI_CJ125 FALSE
 
 #if !defined(EFI_MEMS) || defined(__DOXYGEN__)
- #define EFI_MEMS TRUE
+ #define EFI_MEMS FALSE
 #endif
 
-#define EFI_INTERNAL_ADC TRUE
+#define EFI_INTERNAL_ADC FALSE
 
 #define EFI_NARROW_EGO_AVERAGING TRUE
 
 #define EFI_DENSO_ADC FALSE
 
-#define EFI_CAN_SUPPORT TRUE
+#define EFI_CAN_SUPPORT FALSE
 
-#define EFI_HD44780_LCD TRUE
+#define EFI_HD44780_LCD FALSE
 
-#define EFI_IDLE_CONTROL TRUE
+#define EFI_IDLE_CONTROL FALSE
 
 #define EFI_IDLE_INCREMENTAL_PID_CIC FALSE
 
@@ -148,14 +148,14 @@
  */
 #define EFI_MAIN_RELAY_CONTROL FALSE
 
-#define EFI_PWM TRUE
+#define EFI_PWM FALSE
 
-#define EFI_VEHICLE_SPEED TRUE
+#define EFI_VEHICLE_SPEED FALSE
 
 #define EFI_FUEL_PUMP TRUE
 
-#define EFI_ENGINE_EMULATOR TRUE
-#define EFI_EMULATE_POSITION_SENSORS TRUE
+#define EFI_ENGINE_EMULATOR FALSE
+#define EFI_EMULATE_POSITION_SENSORS FALSE
 
 /**
  * This macros is used to hide pieces of the code from unit tests, so it only makes sense in folders exposed to the tests project.
@@ -166,7 +166,7 @@
 /**
  * Do we need file logging (like SD card) logic?
  */
-#define EFI_FILE_LOGGING TRUE
+#define EFI_FILE_LOGGING FALSE
 
 #ifndef EFI_USB_SERIAL
 #define EFI_USB_SERIAL TRUE
@@ -182,7 +182,7 @@
 #define EFI_SUPPORT_NISSAN_PRIMERA TRUE
 #define EFI_SUPPORT_1995_FORD_INLINE_6 TRUE
 
-#define EFI_ENGINE_SNIFFER TRUE
+#define EFI_ENGINE_SNIFFER FALSE
 
 #define EFI_HISTOGRAMS FALSE
 #define EFI_SENSOR_CHART TRUE

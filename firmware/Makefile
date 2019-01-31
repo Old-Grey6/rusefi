@@ -173,7 +173,6 @@ CSRC = $(STARTUPSRC) \
 	$(PLATFORMSRC) \
 	$(BOARDSRC) \
 	$(BOOTLOADERSRC) \
-	$(CHIBIOS)/os/various/devices_lib/accel/lis302dl.c \
 	$(CHIBIOS)/os/various/syscalls.c \
 	$(CHIBIOS)/os/hal/lib/streams/memstreams.c \
 	$(CHIBIOS)/os/hal/lib/streams/chprintf.c \
@@ -187,7 +186,6 @@ CSRC = $(STARTUPSRC) \
 	$(CONTROLLERS_ALGO_SRC) \
 	$(CONTROLLERS_CORE_SRC) \
 	$(CONTROLLERS_SENSORS_SRC) \
-	$(FATFSSRC) \
 	$(SYSTEMSRC) \
 	$(LED_SRC)
 
