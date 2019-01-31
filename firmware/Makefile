@@ -152,6 +152,8 @@ ifeq ($(USE_BOOTLOADER),yes)
 include $(PROJECT_DIR)/bootloader/bootloader.mk
 endif
 
+include $(PROJECT_DIR)/LED/LED.mk
+
 # Define linker script file here
 ifeq ($(LDSCRIPT),)
   LDSCRIPT= config/stm32f4ems/STM32F407xG.ld
@@ -186,7 +188,8 @@ CSRC = $(STARTUPSRC) \
 	$(CONTROLLERS_CORE_SRC) \
 	$(CONTROLLERS_SENSORS_SRC) \
 	$(FATFSSRC) \
-	$(SYSTEMSRC)
+	$(SYSTEMSRC) \
+	$(LED_SRC)
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -243,6 +246,7 @@ INCDIR = $(CHIBIOS)/os/license \
         $(PORTINC) \
 	$(OSALINC) \
 	$(KERNINC) \
+	$(LEDINC) \
 	$(TESTINC) \
 	$(STARTUPINC) \
 	$(HALINC) \
